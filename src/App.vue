@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <hello></hello>
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
   </div>
@@ -8,13 +9,15 @@
 <script lang="ts">
 import Vue from 'vue';
 import HelloWorld from './components/HelloWorld.vue';
+import Hello from './components/hello/hello.component';
 
-export default Vue.extend({
+export default {
   name: 'app',
   components: {
     HelloWorld,
+    Hello,
   },
-});
+}
 </script>
 
 <style>
